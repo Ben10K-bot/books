@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Booka</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Booka Logo" id="logo-img">
+                <span>Booka</span>
+            </div>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+                <button id="lang-toggle">العربية</button>
+            </div>
+        </nav>
+        <div class="search-bar-container">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Search books or authors...">
+                <i class="fas fa-search" id="search-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="intro-section">
+            <div class="intro-content">
+                <h1 id="intro-title">Your Gateway to Knowledge</h1>
+                <p id="intro-text">Welcome to Booka, a curated collection of world-class literature. Whether you're looking for timeless classics or modern masterpieces, we connect you directly with the books you love.</p>
+                <a href="#book-list" class="cta-btn" id="explore-btn">Explore Collection</a>
+            </div>
+        </section>
+
+        <section id="book-list" class="book-grid">
+            <!-- Books will be loaded here via JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="devs">
+                <p id="dev-text">Developed by:</p>
+                <div class="dev-links">
+                    <a href="https://wa.me/966543936890" target="_blank"><span>Fatma Osama</span> <i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/966500114875" target="_blank"><span>Diala Thafer</span> <i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p id="contact-text">Direct Purchase via WhatsApp</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Booka. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div id="purchase-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Complete Your Purchase</h2>
+            <p id="modal-desc">Choose a developer to finalize your order via WhatsApp:</p>
+            <div class="contact-options">
+                <button id="contact-fatma" class="contact-btn">
+                    <i class="fab fa-whatsapp"></i> Fatma Osama
+                </button>
+                <button id="contact-diala" class="contact-btn">
+                    <i class="fab fa-whatsapp"></i> Diala Thafer
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
